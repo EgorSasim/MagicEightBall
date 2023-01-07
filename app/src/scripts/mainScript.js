@@ -1,11 +1,10 @@
 import { MAGIC_EIGHT_ANSWERS as ANSWERS } from "./magicAnswers.js";
+import { showTriangle } from "./animation.js";
 
 const askQuestionHandler = document.querySelector(".magic-eight__question");
 
 askQuestionHandler.addEventListener("click", () => {
-  const [answerType, answer] = getRandomAnswer(ANSWERS);
-  console.log(answerType);
-  console.log(answer);
+  showTriangle(getRandomAnswer(ANSWERS));
 });
 
 function getRandomAnswer(answers) {
@@ -16,5 +15,5 @@ function getRandomAnswer(answers) {
   const answer = Object.keys(answers[answerType])[
     Math.floor(Object.keys(answers[answerType]).length * Math.random())
   ];
-  return [answerType, answer];
+  return [answerType, answers[answerType][answer]];
 }

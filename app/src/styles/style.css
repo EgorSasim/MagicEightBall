@@ -57,8 +57,13 @@
   box-shadow: none;
 }
 
+.magic-eight__answer {
+  margin: 2rem;
+  font: italic small-caps bold 2rem cursive;
+}
+
 .about-author {
-  margin: 5rem 3rem;
+  margin: 7rem 3rem;
   display: block;
   height: 25%;
 }
