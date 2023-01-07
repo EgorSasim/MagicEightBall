@@ -58,8 +58,26 @@
 }
 
 .about-author {
-  margin: 5rem 0;
+  margin: 5rem 3rem;
   display: block;
-  width: 100%;
   height: 25%;
+}
+
+.about-author__contacts {
+  font: italic small-caps bold 2rem cursive;
+}
+
+.about-author > a {
+  text-decoration: none;
+  font: italic 1.2rem cursive;
+  color: black;
+  display: block;
+  margin: 0.2rem 0.4rem;
+  transition: 1s;
+  width: fit-content;
+}
+
+.about-author > a:hover {
+  color: rgb(247, 167, 102);
+  transition: 1s;
 }
