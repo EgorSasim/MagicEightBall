@@ -1,5 +1,3 @@
-import { MAGIC_EIGHT_ANSWERS } from "./magicAnswers.js";
-
 const imageHandler = document.querySelector(".magic-eight__image");
 const mainHandler = document.querySelector(".magic-eight");
 const answerHandler = document.querySelector(".magic-eight__answer");
@@ -8,6 +6,7 @@ const CANVAS = createCanvas(245, 240);
 
 function showTriangle(answerInfo) {
   const [answerType, answer] = answerInfo;
+  imageHandler.src = "./src/img/magic8ball-noBg-no8.png";
   placeCanvas(CANVAS, 130, 135);
   drawTriangle(CANVAS, answerType);
   showAnswer(answer);
